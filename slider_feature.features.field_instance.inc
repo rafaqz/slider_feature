@@ -62,9 +62,49 @@ function slider_feature_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'simple_entity-slide-field_slide_weight'
+  $field_instances['simple_entity-slide-field_slide_weight'] = array(
+    'bundle' => 'slide',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'simple_entity',
+    'field_name' => 'field_slide_weight',
+    'label' => 'Weight',
+    'required' => FALSE,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 32,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Slide Image');
+  t('Weight');
 
   return $field_instances;
 }
