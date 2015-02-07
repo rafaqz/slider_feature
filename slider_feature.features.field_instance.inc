@@ -29,7 +29,7 @@ function slider_feature_field_default_field_instances() {
     ),
     'entity_type' => 'simple_entity',
     'field_name' => 'field_slide_image',
-    'label' => 'Slide Image',
+    'label' => 'Image',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -50,6 +50,7 @@ function slider_feature_field_default_field_instances() {
           'public' => 'public',
         ),
         'allowed_types' => array(
+          0 => 0,
           'audio' => 0,
           'default' => 0,
           'image' => 'image',
@@ -103,7 +104,7 @@ function slider_feature_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Slide Image');
+  t('Image');
   t('Weight');
 
   return $field_instances;
