@@ -33,7 +33,7 @@ function slider_feature_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'views_foundation_orbit';
   $handler->display->display_options['style_options']['animation_speed'] = '500';
   $handler->display->display_options['style_options']['timer_speed'] = '10000';
-  $handler->display->display_options['style_options']['resume_on_mouseout'] = 1;
+  $handler->display->display_options['style_options']['resume_on_mouseout'] = 0;
   $handler->display->display_options['style_options']['pause_on_hover'] = 0;
   $handler->display->display_options['style_options']['bullets'] = 1;
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -42,6 +42,7 @@ function slider_feature_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'simple_entity';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Simple Entity: Image */
   $handler->display->display_options['fields']['field_slide_image']['id'] = 'field_slide_image';
